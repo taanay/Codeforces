@@ -12,9 +12,12 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        long long n;
+        ll n;
+        float a;
         cin >> n;
-        
+        a = log2(n);
+        if(floor(a)==a) cout<<"NO"<<nl;
+        else cout<<"YES"<<nl;
     }
     return 0;
 }

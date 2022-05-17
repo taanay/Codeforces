@@ -12,9 +12,16 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        long long n;
-        cin >> n;
-        
+        ll a, b, ans=0;
+        cin >> a >> b;
+        if(a>b) swap(a, b);
+        ans = b-a;
+        if(ans==0) cout<< 0 << " " << 0 <<nl;
+        else{
+            ll c = (ans - a%ans);
+            ll d = a%ans;
+            cout<<ans<<" "<<min(c, d)<<nl;
+        }
     }
     return 0;
 }
