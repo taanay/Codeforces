@@ -12,9 +12,15 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        long long n;
-        cin >> n;
-        
+    ll a,b,c;
+    cin>>a>>b>>c;
+    if((b-a)==(c-b)){cout<<"YES"<<nl;continue;}
+    if((a+c)%(2*b)==0){cout<<"YES"<<nl;continue;}
+    if((2*b-a)>0)
+    if((2*b-a)%c==0){cout<<"YES"<<nl;continue;}
+    if((2*b-c)>0)
+    if((2*b-c)%a==0){cout<<"YES"<<nl;continue;}
+    cout<<"NO"<<nl;
     }
     return 0;
 }
