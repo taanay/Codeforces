@@ -12,7 +12,16 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        
+        int n;
+        string s;
+        cin >> n >> s;
+        int count=0;
+        for(int i=(n+1)/2;i<n;i++) {
+            if(s[i]!=s[n/2]) break;
+            count+=2;
+        }
+        count += n%2;
+        cout<<count<<nl;
     }
     return 0;
 }

@@ -12,7 +12,18 @@ int main() {
     int t;
     cin >> t;
     while(t--) {
-        
+        string s;
+        cin >> s;
+        unordered_map<char, int> m;
+        for(int i = 0; i<s.length(); i++) {
+            m[s[i]]++;
+        }
+        for(auto it : m) {
+            int k = it.second;
+            while(k--) 
+                cout<<it.first;
+        }
+        cout<<nl;
     }
     return 0;
 }
